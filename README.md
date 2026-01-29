@@ -3,20 +3,6 @@
 This repository provides a **step-by-step guide** to correctly install and configure **Cain and Abel** with **WinPcap** on Windows systems.  
 Follow the instructions carefully to avoid common installation and network issues.
 
-> ⚠️ **Disclaimer**  
-> Cain and Abel is a security tool intended for **educational and ethical use only**.  
-> Use it **only on systems and networks you own or have permission to test**.
-
----
-
-## Prerequisites
-
-- Windows OS
-- Administrator access
-- Antivirus / Windows Defender temporarily disabled
-
----
-
 ## Installation Steps
 
 ### 1️⃣ Disable Antivirus (Windows Defender)
@@ -27,7 +13,10 @@ Temporarily disable Windows Defender or any other antivirus software to prevent 
 ### 2️⃣ Download Required Software
 Download **both** of the following:
 - Cain and Abel
+https://web.archive.org/web/20160311154514/http://www.oxid.it/downloads/ca_setup.exe
+- 
 - WinPcap
+- https://www.winpcap.org/install/
 
 ---
 
@@ -77,7 +66,9 @@ Then:
 1. Open **PowerShell as Administrator**
 2. Run the following command **exactly as shown**:
 
-3. Press **Enter**
+3. netsh int ip set global taskoffload=disable
+
+4. Press **Enter**
 
 ---
 
@@ -91,9 +82,4 @@ Then:
   - Antivirus status
 
 ---
-
-## License
-
-This guide is provided for **educational purposes only**.  
-The author is not responsible for misuse or damage caused by improper usage.
 
