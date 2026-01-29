@@ -7,13 +7,16 @@ Follow the instructions carefully to avoid common installation and network issue
 
 ### 1️⃣ Disable Antivirus (Windows Defender)
 Temporarily disable Windows Defender or any other antivirus software to prevent installation issues.
+Open Windows Security
+Go to Virus & Threat Protection
+Temporarily disable Real-Time Protection
 
 ---
 
 ### 2️⃣ Download Required Software
 Download **both** of the following:
 - Cain and Abel
-https://web.archive.org/web/20160311154514/http://www.oxid.it/downloads/ca_setup.exe
+- https://web.archive.org/web/20160311154514/http://www.oxid.it/downloads/ca_setup.exe
 - 
 - WinPcap
 - https://www.winpcap.org/install/
