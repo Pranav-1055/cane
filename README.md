@@ -69,7 +69,7 @@ Then:
 1. Open **PowerShell as Administrator**
 2. Run the following command **exactly as shown**:
 
-3. netsh int ip set global taskoffload=disable
+   netsh int ip set global taskoffload=disable   
 
 4. Press **Enter**
 
