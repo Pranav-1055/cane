@@ -50,4 +50,50 @@ Download **both** of the following:
 ### 5️⃣ Modify Network Adapter Settings
 
 Go to:
+Control Panel
+→ Network and Internet
+→ Network and Sharing Center
+→ Change adapter settings
+
+
+Then:
+
+1. Right-click the network adapter you are using  
+   (e.g. **Ethernet 0** or **Wi-Fi**)
+2. Click **Properties**
+3. **Disable IPv6**
+4. Select **Internet Protocol Version 4 (IPv4)** → **Properties**
+5. Click **Advanced**
+6. Go to the **DNS** tab
+7. Make sure **both checkboxes are ticked**
+8. Click **OK** and close all settings
+
+---
+
+## PowerShell Configuration
+
+### 6️⃣ Disable Task Offloading
+
+1. Open **PowerShell as Administrator**
+2. Run the following command **exactly as shown**:
+
+3. Press **Enter**
+
+---
+
+## Final Notes
+
+- Restart your system after completing all steps
+- Ensure you are running Cain and Abel with **administrator privileges**
+- If network sniffing does not work, re-check:
+  - WinPcap installation
+  - IPv4 DNS settings
+  - Antivirus status
+
+---
+
+## License
+
+This guide is provided for **educational purposes only**.  
+The author is not responsible for misuse or damage caused by improper usage.
 
