@@ -1,86 +1,53 @@
-🚫 Step 1: Disable Antivirus (Windows Defender)
+# Cain and Abel + WinPcap Setup Guide (Windows)
 
-Cain & Abel is often detected as a hacking tool by antivirus software.
+This repository provides a **step-by-step guide** to correctly install and configure **Cain and Abel** with **WinPcap** on Windows systems.  
+Follow the instructions carefully to avoid common installation and network issues.
 
-Open Windows Security
+> ⚠️ **Disclaimer**  
+> Cain and Abel is a security tool intended for **educational and ethical use only**.  
+> Use it **only on systems and networks you own or have permission to test**.
 
-Go to Virus & Threat Protection
+---
 
-Temporarily disable Real-Time Protection
+## Prerequisites
 
-📥 Step 2: Download Required Software
+- Windows OS
+- Administrator access
+- Antivirus / Windows Defender temporarily disabled
 
-Download the following two tools:
+---
 
-Cain & Abel
+## Installation Steps
 
-WinPcap
+### 1️⃣ Disable Antivirus (Windows Defender)
+Temporarily disable Windows Defender or any other antivirus software to prevent installation issues.
 
-Make sure you download both before starting the installation.
+---
 
-🧩 Step 3: Install WinPcap (First)
+### 2️⃣ Download Required Software
+Download **both** of the following:
+- Cain and Abel
+- WinPcap
 
-Run the WinPcap installer
+---
 
-Complete the installation using default settings
+### 3️⃣ Install WinPcap
+- Run the **WinPcap installer**
+- Complete the installation normally
 
-✅ WinPcap must be installed before Cain & Abel.
+---
 
-🧪 Step 4: Install Cain & Abel
+### 4️⃣ Install Cain and Abel
+- Run the **Cain and Abel installer**
+- Click **Run anyway** if Windows shows a warning
+- When prompted to install WinPcap again:
+  - Click **Don’t Install** (because it is already installed)
 
-Run the Cain & Abel installer
+---
 
-When Windows shows a warning, click Run anyway
+## Network Configuration
 
-During installation, it may ask to install WinPcap again
+### 5️⃣ Modify Network Adapter Settings
 
-Click Don’t install (because it is already installed)
+Go to:
 
-🌐 Step 5: Configure Network Adapter Settings
-
-Open Control Panel
-
-Go to
-Network and Internet → Network and Sharing Center
-
-Click Change adapter settings
-
-Right-click on the network adapter you are using
-(example: Ethernet 0) → Properties
-
-🔹 Disable IPv6
-
-Uncheck Internet Protocol Version 6 (IPv6)
-
-🔹 Configure IPv4
-
-Select Internet Protocol Version 4 (IPv4)
-
-Click Properties
-
-Click Advanced
-
-Go to the DNS tab
-
-Make sure both checkboxes are ticked
-
-Click OK
-
-Close all settings windows
-
-🖥️ Step 6: Disable Task Offloading (Required)
-
-Open PowerShell as Administrator
-
-Run the following command:
-
-netsh int ip set global taskoffload=disable
-
-
-Press Enter
-
-✅ Final Notes
-
-Restart your system if required
-
-Always run Cain & Abel as Administrator
